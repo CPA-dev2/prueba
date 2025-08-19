@@ -1,0 +1,626 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:1:1-119:12
+MERGED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:1:1-119:12
+INJECTED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+INJECTED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+INJECTED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+MERGED from [com.facebook.react:react-native:0.68.7] /home/cpa-dev2/.gradle/caches/transforms-3/f4b0c61c6a3c022749ff04f07a695705/transformed/jetified-react-native-0.68.7/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.firebase:firebase-core:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/63850f78560f3db09a90083f36cdc20b/transformed/jetified-firebase-core-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-messaging:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/649c2e47dcb2d45293309a7a28c241a2/transformed/jetified-firebase-messaging-19.0.0/AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.multidex:multidex:2.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/00fedc709b2d8b7cef3210430acb46bd/transformed/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [org.webkit:android-jsc:r250230] /home/cpa-dev2/.gradle/caches/transforms-3/b2359b545fc4179748f2aacf5908b400/transformed/jetified-android-jsc-r250230/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.fresco:fresco:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/ee21aad82926bee1fb12f28c85871e3b/transformed/jetified-fresco-2.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/9498d883db74e88b68144e033708459a/transformed/jetified-imagepipeline-okhttp3-2.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/a3922fc13180e69060d58e967fd793ef/transformed/jetified-drawee-2.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagefilters:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/640ecc72961c7d383b48a0482ecbc249/transformed/jetified-nativeimagefilters-2.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:memory-type-native:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/3283ccebc39ad84485142c5820dbd9e8/transformed/jetified-memory-type-native-2.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:memory-type-java:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/f0b8e4030822aa8516296160e6849cb4/transformed/jetified-memory-type-java-2.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-native:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/299bc72c55fcb87f09e638a6893a317e/transformed/jetified-imagepipeline-native-2.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:memory-type-ashmem:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/e278bc6f5d35d47e9eed1ea6ad84a20f/transformed/jetified-memory-type-ashmem-2.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/aa8006896839dd54b44f21add5af074a/transformed/jetified-imagepipeline-2.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/c7fea737de679de47aab9dabc4f14ecf/transformed/jetified-nativeimagetranscoder-2.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/44aa522391789c5a79f1d12959a04857/transformed/jetified-imagepipeline-base-2.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.appcompat:appcompat:1.0.2] /home/cpa-dev2/.gradle/caches/transforms-3/ed5764237cd4a048ed568321050770c4/transformed/appcompat-1.0.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.autofill:autofill:1.1.0] /home/cpa-dev2/.gradle/caches/transforms-3/1089df71edc0ffc6ca46216565e541dd/transformed/jetified-autofill-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-analytics:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/d220ebd6535d87862d52159469be21ef/transformed/jetified-firebase-analytics-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/a77df2d3e0dee2db2ce13ef18cfba07a/transformed/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:17:1-36:12
+MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/6ffe22846a02a1d90d394cdab7beab58/transformed/jetified-firebase-iid-19.0.0/AndroidManifest.xml:17:1-47:12
+MERGED from [com.google.firebase:firebase-common:18.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/fd925a0203d58e3db46a4fae8bc16ae6/transformed/jetified-firebase-common-18.0.0/AndroidManifest.xml:2:1-19:12
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/e894f9a0eb6ea1661f470ef6acdf288f/transformed/jetified-firebase-iid-interop-17.0.0/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/903109ea5d20587f5e66dbd669c2cddc/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/de6ecf2082903f09348139cc73fda105/transformed/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/50ee24b77db86c4ff18c1ab7ee86ca9a/transformed/jetified-firebase-measurement-connector-18.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:17:1-55:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/0ec0e1eaa5915a2ac4e23f64c2423faa/transformed/jetified-play-services-measurement-sdk-17.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/df5c7757d28b6daa3661ad07c3300635/transformed/jetified-play-services-measurement-impl-17.0.0/AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/b649fbb6105ffcad97f7fe120f0072b1/transformed/jetified-play-services-stats-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/8c278bc94c8e7d83b374c01684e6f49f/transformed/jetified-play-services-measurement-sdk-api-17.0.0/AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-measurement-base:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/de8a0e072332b9defa6f7e298e4b02e0/transformed/jetified-play-services-measurement-base-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/16aeb77cbf045c4a2172de27286df635/transformed/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/ae439be4813e465eca40b608cec27f34/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/2c9405893ca27f31f0e83270fcbb1373/transformed/fragment-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/9c1546993a0eb14b1aee5af5f83495c9/transformed/vectordrawable-animated-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/2fc82853a8e5c58b9f64f2a0192e63f7/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/99899b7417b56b9a4891453cbe98d818/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:middleware:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/bebd3e2acb38c3299488beb1f0d4f22b/transformed/jetified-middleware-2.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:ui-common:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/8bb6c4d36e1f9232abf57d0b7e67155b/transformed/jetified-ui-common-2.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:soloader:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/5d773a03378294b188b00fe879e5e068/transformed/jetified-soloader-2.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.10.3] /home/cpa-dev2/.gradle/caches/transforms-3/042d5b5951bfd2ab3d3dc1b0078309da/transformed/jetified-soloader-0.10.3/AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/9bc1c5594cafbe7104b820c3d371476d/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /home/cpa-dev2/.gradle/caches/transforms-3/286ff182151276900197b666475c2562/transformed/vectordrawable-1.0.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/2be8c73b2953bfd5b80514a2df6b487f/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/7b382c297aa17f21f7b6fdc92cbc805b/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/f6b401bdd1931554ba2b5b01353608fb/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/74f74d3808767235875f5c420f080704/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/dc047a6e1531fbecf27d574d3ed8da2a/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/d3af9146b079501a9b4d66ffb9d0bfbe/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/2fe6edeaa018ca1302c3133c50357b12/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.1.0] /home/cpa-dev2/.gradle/caches/transforms-3/a3120de29325a2c9fe395964e8b69e47/transformed/core-1.1.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/cpa-dev2/.gradle/caches/transforms-3/bc12a52300125437bdb84cf592397e18/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/1b5b8e2a316ca4d25c1ff11c6dcbff4e/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/1a920f8c718331d1f8a08144d155d29a/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/ceb62d2223baa531d169885c607a73a6/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/a2b6d39a167f61565e104fb617ae96ce/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/0c45c5a2285f4e43d1182c54ab2c5220/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/d5a449ec13c6954ecd9f20166af0a839/transformed/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/904a45cbb6f0cedfd75e4e4cc32a6380/transformed/lifecycle-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/20b6e4479e0b8612ea5f0863aa44c3ac/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/ad9a40210ea1327a50bf07957b0268b6/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/758465d9b90dd05d7e4427e7698d7c60/transformed/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fbcore:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/c9d4dfb82b9847423cd72e89b4baf280/transformed/jetified-fbcore-2.5.0/AndroidManifest.xml:2:1-9:12
+	package
+		INJECTED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/debug/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/debug/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:2:5-51
+	android:versionCode
+		INJECTED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/debug/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:4:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/a77df2d3e0dee2db2ce13ef18cfba07a/transformed/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/a77df2d3e0dee2db2ce13ef18cfba07a/transformed/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/6ffe22846a02a1d90d394cdab7beab58/transformed/jetified-firebase-iid-19.0.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/6ffe22846a02a1d90d394cdab7beab58/transformed/jetified-firebase-iid-19.0.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/df5c7757d28b6daa3661ad07c3300635/transformed/jetified-play-services-measurement-impl-17.0.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/df5c7757d28b6daa3661ad07c3300635/transformed/jetified-play-services-measurement-impl-17.0.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/8c278bc94c8e7d83b374c01684e6f49f/transformed/jetified-play-services-measurement-sdk-api-17.0.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/8c278bc94c8e7d83b374c01684e6f49f/transformed/jetified-play-services-measurement-sdk-api-17.0.0/AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:5:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/a77df2d3e0dee2db2ce13ef18cfba07a/transformed/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/a77df2d3e0dee2db2ce13ef18cfba07a/transformed/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/6ffe22846a02a1d90d394cdab7beab58/transformed/jetified-firebase-iid-19.0.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/6ffe22846a02a1d90d394cdab7beab58/transformed/jetified-firebase-iid-19.0.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/df5c7757d28b6daa3661ad07c3300635/transformed/jetified-play-services-measurement-impl-17.0.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/df5c7757d28b6daa3661ad07c3300635/transformed/jetified-play-services-measurement-impl-17.0.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/8c278bc94c8e7d83b374c01684e6f49f/transformed/jetified-play-services-measurement-sdk-api-17.0.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/8c278bc94c8e7d83b374c01684e6f49f/transformed/jetified-play-services-measurement-sdk-api-17.0.0/AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:5:22-76
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:6:5-77
+	android:name
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:6:22-74
+uses-permission#android.permission.READ_MEDIA_IMAGES
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:9:5-76
+	android:name
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:9:22-73
+uses-permission#android.permission.READ_MEDIA_VIDEO
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:10:5-75
+	android:name
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:10:22-72
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:12:5-77
+MERGED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:12:5-77
+MERGED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:12:5-77
+	android:name
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:12:22-75
+uses-permission#android.permission.CAMERA
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:13:5-65
+	android:name
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:13:22-62
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:14:5-80
+	android:name
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:14:22-78
+uses-permission#android.permission.VIBRATE
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:15:5-66
+	android:name
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:15:22-63
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:16:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/a77df2d3e0dee2db2ce13ef18cfba07a/transformed/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/a77df2d3e0dee2db2ce13ef18cfba07a/transformed/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/6ffe22846a02a1d90d394cdab7beab58/transformed/jetified-firebase-iid-19.0.0/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/6ffe22846a02a1d90d394cdab7beab58/transformed/jetified-firebase-iid-19.0.0/AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/df5c7757d28b6daa3661ad07c3300635/transformed/jetified-play-services-measurement-impl-17.0.0/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/df5c7757d28b6daa3661ad07c3300635/transformed/jetified-play-services-measurement-impl-17.0.0/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/8c278bc94c8e7d83b374c01684e6f49f/transformed/jetified-play-services-measurement-sdk-api-17.0.0/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/8c278bc94c8e7d83b374c01684e6f49f/transformed/jetified-play-services-measurement-sdk-api-17.0.0/AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:16:22-65
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:17:5-76
+	android:name
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:17:22-73
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:18:5-79
+	android:name
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:18:22-76
+uses-feature#android.hardware.camera
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:20:5-60
+	android:name
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:20:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:21:5-70
+	android:name
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:21:19-67
+application
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:23:5-118:19
+MERGED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:23:5-118:19
+MERGED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:23:5-118:19
+INJECTED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/debug/AndroidManifest.xml:7:5-117
+MERGED from [com.facebook.react:react-native:0.68.7] /home/cpa-dev2/.gradle/caches/transforms-3/f4b0c61c6a3c022749ff04f07a695705/transformed/jetified-react-native-0.68.7/AndroidManifest.xml:9:5-20
+MERGED from [com.facebook.react:react-native:0.68.7] /home/cpa-dev2/.gradle/caches/transforms-3/f4b0c61c6a3c022749ff04f07a695705/transformed/jetified-react-native-0.68.7/AndroidManifest.xml:9:5-20
+MERGED from [com.google.firebase:firebase-core:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/63850f78560f3db09a90083f36cdc20b/transformed/jetified-firebase-core-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-core:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/63850f78560f3db09a90083f36cdc20b/transformed/jetified-firebase-core-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-messaging:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/649c2e47dcb2d45293309a7a28c241a2/transformed/jetified-firebase-messaging-19.0.0/AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-messaging:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/649c2e47dcb2d45293309a7a28c241a2/transformed/jetified-firebase-messaging-19.0.0/AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-analytics:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/d220ebd6535d87862d52159469be21ef/transformed/jetified-firebase-analytics-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/d220ebd6535d87862d52159469be21ef/transformed/jetified-firebase-analytics-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/a77df2d3e0dee2db2ce13ef18cfba07a/transformed/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-measurement-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/a77df2d3e0dee2db2ce13ef18cfba07a/transformed/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/6ffe22846a02a1d90d394cdab7beab58/transformed/jetified-firebase-iid-19.0.0/AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/6ffe22846a02a1d90d394cdab7beab58/transformed/jetified-firebase-iid-19.0.0/AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.firebase:firebase-common:18.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/fd925a0203d58e3db46a4fae8bc16ae6/transformed/jetified-firebase-common-18.0.0/AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.firebase:firebase-common:18.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/fd925a0203d58e3db46a4fae8bc16ae6/transformed/jetified-firebase-common-18.0.0/AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/e894f9a0eb6ea1661f470ef6acdf288f/transformed/jetified-firebase-iid-interop-17.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/e894f9a0eb6ea1661f470ef6acdf288f/transformed/jetified-firebase-iid-interop-17.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/903109ea5d20587f5e66dbd669c2cddc/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/903109ea5d20587f5e66dbd669c2cddc/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/de6ecf2082903f09348139cc73fda105/transformed/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/de6ecf2082903f09348139cc73fda105/transformed/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/50ee24b77db86c4ff18c1ab7ee86ca9a/transformed/jetified-firebase-measurement-connector-18.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/50ee24b77db86c4ff18c1ab7ee86ca9a/transformed/jetified-firebase-measurement-connector-18.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/0ec0e1eaa5915a2ac4e23f64c2423faa/transformed/jetified-play-services-measurement-sdk-17.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/0ec0e1eaa5915a2ac4e23f64c2423faa/transformed/jetified-play-services-measurement-sdk-17.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/df5c7757d28b6daa3661ad07c3300635/transformed/jetified-play-services-measurement-impl-17.0.0/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/df5c7757d28b6daa3661ad07c3300635/transformed/jetified-play-services-measurement-impl-17.0.0/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/b649fbb6105ffcad97f7fe120f0072b1/transformed/jetified-play-services-stats-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/b649fbb6105ffcad97f7fe120f0072b1/transformed/jetified-play-services-stats-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/8c278bc94c8e7d83b374c01684e6f49f/transformed/jetified-play-services-measurement-sdk-api-17.0.0/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/8c278bc94c8e7d83b374c01684e6f49f/transformed/jetified-play-services-measurement-sdk-api-17.0.0/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.android.gms:play-services-measurement-base:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/de8a0e072332b9defa6f7e298e4b02e0/transformed/jetified-play-services-measurement-base-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/de8a0e072332b9defa6f7e298e4b02e0/transformed/jetified-play-services-measurement-base-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/16aeb77cbf045c4a2172de27286df635/transformed/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/16aeb77cbf045c4a2172de27286df635/transformed/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/ae439be4813e465eca40b608cec27f34/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/ae439be4813e465eca40b608cec27f34/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.facebook.soloader:soloader:0.10.3] /home/cpa-dev2/.gradle/caches/transforms-3/042d5b5951bfd2ab3d3dc1b0078309da/transformed/jetified-soloader-0.10.3/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.10.3] /home/cpa-dev2/.gradle/caches/transforms-3/042d5b5951bfd2ab3d3dc1b0078309da/transformed/jetified-soloader-0.10.3/AndroidManifest.xml:11:5-20
+MERGED from [androidx.core:core:1.1.0] /home/cpa-dev2/.gradle/caches/transforms-3/a3120de29325a2c9fe395964e8b69e47/transformed/core-1.1.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] /home/cpa-dev2/.gradle/caches/transforms-3/a3120de29325a2c9fe395964e8b69e47/transformed/core-1.1.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/cpa-dev2/.gradle/caches/transforms-3/bc12a52300125437bdb84cf592397e18/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/cpa-dev2/.gradle/caches/transforms-3/bc12a52300125437bdb84cf592397e18/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+	android:extractNativeLibs
+		INJECTED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/debug/AndroidManifest.xml
+	android:requestLegacyExternalStorage
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:29:7-50
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:29:7-50
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] /home/cpa-dev2/.gradle/caches/transforms-3/a3120de29325a2c9fe395964e8b69e47/transformed/core-1.1.0/AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:25:7-39
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:25:7-39
+	tools:ignore
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/debug/AndroidManifest.xml:7:75-114
+	android:roundIcon
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:27:7-52
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:27:7-52
+	tools:targetApi
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:31:7-27
+	android:icon
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:26:7-41
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:26:7-41
+	android:allowBackup
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:28:7-33
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:28:7-33
+	android:theme
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:30:7-38
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:30:7-38
+	tools:replace
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:32:7-42
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:32:7-42
+	android:usesCleartextTraffic
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/debug/AndroidManifest.xml:7:18-53
+	android:name
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:24:7-38
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:24:7-38
+meta-data#com.google.firebase.messaging.default_notification_icon
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:35:9-37:54
+	android:resource
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:37:13-51
+	android:name
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:36:13-83
+service#com.dieam.reactnativepushnotification.modules.RNPushNotificationListenerService
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:39:9-45:19
+	android:exported
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:41:13-37
+	android:name
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:40:13-107
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:42:13-44:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:43:17-81
+	android:name
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:43:25-78
+receiver#com.dieam.reactnativepushnotification.modules.RNPushNotificationActions
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:47:9-49:40
+	android:exported
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:49:13-37
+	android:name
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:48:13-99
+receiver#com.dieam.reactnativepushnotification.modules.RNPushNotificationPublisher
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:51:9-53:40
+	android:exported
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:53:13-37
+	android:name
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:52:13-101
+receiver#com.dieam.reactnativepushnotification.modules.RNPushNotificationBootEventReceiver
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:55:9-61:20
+	android:exported
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:57:13-36
+	android:name
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:56:13-109
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:58:13-60:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:59:17-79
+	android:name
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:59:25-76
+receiver#io.invertase.firebase.messaging.RNFirebaseLocalMessagingPublisher
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:63:9-65:40
+	android:exported
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:65:13-37
+	android:name
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:64:13-93
+receiver#io.invertase.firebase.messaging.RNFirebaseSystemBootEventReceiver
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:67:9-76:20
+	android:exported
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:69:13-36
+	android:name
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:68:13-93
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.QUICKBOOT_POWERON+action:name:com.htc.intent.action.QUICKBOOT_POWERON+category:name:android.intent.category.DEFAULT
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:70:13-75:29
+action#android.intent.action.QUICKBOOT_POWERON
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:72:17-81
+	android:name
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:72:25-79
+action#com.htc.intent.action.QUICKBOOT_POWERON
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:73:17-81
+	android:name
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:73:25-79
+category#android.intent.category.DEFAULT
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:74:17-76
+	android:name
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:74:27-73
+receiver#io.invertase.firebase.notifications.RNFirebaseNotificationReceiver
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:78:9-80:40
+	android:exported
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:80:13-37
+	android:name
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:79:13-94
+receiver#io.invertase.firebase.notifications.RNFirebaseNotificationsRebootReceiver
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:82:9-91:20
+	android:exported
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:84:13-36
+	android:name
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:83:13-101
+activity#com.prendacreditoavanza.MainActivity
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:94:7-106:18
+	android:label
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:96:9-41
+	android:launchMode
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:97:9-39
+	android:windowSoftInputMode
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:100:9-51
+	android:exported
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:99:9-32
+	android:configChanges
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:98:9-118
+	android:theme
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:101:9-65
+	android:name
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:95:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:102:9-105:25
+action#android.intent.action.MAIN
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:103:13-65
+	android:name
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:103:21-62
+category#android.intent.category.LAUNCHER
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:104:13-73
+	android:name
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:104:23-70
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:108:7-84
+	android:name
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:108:17-81
+service#com.prendacreditoavanza.firebase.MessagingService
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:111:7-117:17
+	android:exported
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:113:11-35
+	android:name
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:112:11-52
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:114:11-116:27
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:115:15-76
+	android:name
+		ADDED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:115:23-73
+uses-sdk
+INJECTED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/debug/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/debug/AndroidManifest.xml
+INJECTED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/debug/AndroidManifest.xml
+MERGED from [com.facebook.react:react-native:0.68.7] /home/cpa-dev2/.gradle/caches/transforms-3/f4b0c61c6a3c022749ff04f07a695705/transformed/jetified-react-native-0.68.7/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.react:react-native:0.68.7] /home/cpa-dev2/.gradle/caches/transforms-3/f4b0c61c6a3c022749ff04f07a695705/transformed/jetified-react-native-0.68.7/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-core:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/63850f78560f3db09a90083f36cdc20b/transformed/jetified-firebase-core-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/63850f78560f3db09a90083f36cdc20b/transformed/jetified-firebase-core-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-messaging:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/649c2e47dcb2d45293309a7a28c241a2/transformed/jetified-firebase-messaging-19.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/649c2e47dcb2d45293309a7a28c241a2/transformed/jetified-firebase-messaging-19.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.multidex:multidex:2.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/00fedc709b2d8b7cef3210430acb46bd/transformed/multidex-2.0.0/AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/00fedc709b2d8b7cef3210430acb46bd/transformed/multidex-2.0.0/AndroidManifest.xml:20:5-43
+MERGED from [org.webkit:android-jsc:r250230] /home/cpa-dev2/.gradle/caches/transforms-3/b2359b545fc4179748f2aacf5908b400/transformed/jetified-android-jsc-r250230/AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r250230] /home/cpa-dev2/.gradle/caches/transforms-3/b2359b545fc4179748f2aacf5908b400/transformed/jetified-android-jsc-r250230/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:fresco:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/ee21aad82926bee1fb12f28c85871e3b/transformed/jetified-fresco-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/ee21aad82926bee1fb12f28c85871e3b/transformed/jetified-fresco-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/9498d883db74e88b68144e033708459a/transformed/jetified-imagepipeline-okhttp3-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/9498d883db74e88b68144e033708459a/transformed/jetified-imagepipeline-okhttp3-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/a3922fc13180e69060d58e967fd793ef/transformed/jetified-drawee-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/a3922fc13180e69060d58e967fd793ef/transformed/jetified-drawee-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/640ecc72961c7d383b48a0482ecbc249/transformed/jetified-nativeimagefilters-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/640ecc72961c7d383b48a0482ecbc249/transformed/jetified-nativeimagefilters-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-native:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/3283ccebc39ad84485142c5820dbd9e8/transformed/jetified-memory-type-native-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-native:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/3283ccebc39ad84485142c5820dbd9e8/transformed/jetified-memory-type-native-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-java:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/f0b8e4030822aa8516296160e6849cb4/transformed/jetified-memory-type-java-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-java:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/f0b8e4030822aa8516296160e6849cb4/transformed/jetified-memory-type-java-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-native:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/299bc72c55fcb87f09e638a6893a317e/transformed/jetified-imagepipeline-native-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-native:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/299bc72c55fcb87f09e638a6893a317e/transformed/jetified-imagepipeline-native-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-ashmem:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/e278bc6f5d35d47e9eed1ea6ad84a20f/transformed/jetified-memory-type-ashmem-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-ashmem:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/e278bc6f5d35d47e9eed1ea6ad84a20f/transformed/jetified-memory-type-ashmem-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/aa8006896839dd54b44f21add5af074a/transformed/jetified-imagepipeline-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/aa8006896839dd54b44f21add5af074a/transformed/jetified-imagepipeline-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/c7fea737de679de47aab9dabc4f14ecf/transformed/jetified-nativeimagetranscoder-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/c7fea737de679de47aab9dabc4f14ecf/transformed/jetified-nativeimagetranscoder-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/44aa522391789c5a79f1d12959a04857/transformed/jetified-imagepipeline-base-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/44aa522391789c5a79f1d12959a04857/transformed/jetified-imagepipeline-base-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.0.2] /home/cpa-dev2/.gradle/caches/transforms-3/ed5764237cd4a048ed568321050770c4/transformed/appcompat-1.0.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] /home/cpa-dev2/.gradle/caches/transforms-3/ed5764237cd4a048ed568321050770c4/transformed/appcompat-1.0.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.autofill:autofill:1.1.0] /home/cpa-dev2/.gradle/caches/transforms-3/1089df71edc0ffc6ca46216565e541dd/transformed/jetified-autofill-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.1.0] /home/cpa-dev2/.gradle/caches/transforms-3/1089df71edc0ffc6ca46216565e541dd/transformed/jetified-autofill-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-analytics:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/d220ebd6535d87862d52159469be21ef/transformed/jetified-firebase-analytics-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/d220ebd6535d87862d52159469be21ef/transformed/jetified-firebase-analytics-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/a77df2d3e0dee2db2ce13ef18cfba07a/transformed/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/a77df2d3e0dee2db2ce13ef18cfba07a/transformed/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/6ffe22846a02a1d90d394cdab7beab58/transformed/jetified-firebase-iid-19.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/6ffe22846a02a1d90d394cdab7beab58/transformed/jetified-firebase-iid-19.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:18.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/fd925a0203d58e3db46a4fae8bc16ae6/transformed/jetified-firebase-common-18.0.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:18.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/fd925a0203d58e3db46a4fae8bc16ae6/transformed/jetified-firebase-common-18.0.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/e894f9a0eb6ea1661f470ef6acdf288f/transformed/jetified-firebase-iid-interop-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/e894f9a0eb6ea1661f470ef6acdf288f/transformed/jetified-firebase-iid-interop-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/903109ea5d20587f5e66dbd669c2cddc/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/903109ea5d20587f5e66dbd669c2cddc/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/de6ecf2082903f09348139cc73fda105/transformed/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/de6ecf2082903f09348139cc73fda105/transformed/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/50ee24b77db86c4ff18c1ab7ee86ca9a/transformed/jetified-firebase-measurement-connector-18.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/50ee24b77db86c4ff18c1ab7ee86ca9a/transformed/jetified-firebase-measurement-connector-18.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/0ec0e1eaa5915a2ac4e23f64c2423faa/transformed/jetified-play-services-measurement-sdk-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/0ec0e1eaa5915a2ac4e23f64c2423faa/transformed/jetified-play-services-measurement-sdk-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/df5c7757d28b6daa3661ad07c3300635/transformed/jetified-play-services-measurement-impl-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/df5c7757d28b6daa3661ad07c3300635/transformed/jetified-play-services-measurement-impl-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/b649fbb6105ffcad97f7fe120f0072b1/transformed/jetified-play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/b649fbb6105ffcad97f7fe120f0072b1/transformed/jetified-play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/8c278bc94c8e7d83b374c01684e6f49f/transformed/jetified-play-services-measurement-sdk-api-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/8c278bc94c8e7d83b374c01684e6f49f/transformed/jetified-play-services-measurement-sdk-api-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/de8a0e072332b9defa6f7e298e4b02e0/transformed/jetified-play-services-measurement-base-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/de8a0e072332b9defa6f7e298e4b02e0/transformed/jetified-play-services-measurement-base-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/16aeb77cbf045c4a2172de27286df635/transformed/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/16aeb77cbf045c4a2172de27286df635/transformed/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/ae439be4813e465eca40b608cec27f34/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/ae439be4813e465eca40b608cec27f34/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/2c9405893ca27f31f0e83270fcbb1373/transformed/fragment-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/2c9405893ca27f31f0e83270fcbb1373/transformed/fragment-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/9c1546993a0eb14b1aee5af5f83495c9/transformed/vectordrawable-animated-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/9c1546993a0eb14b1aee5af5f83495c9/transformed/vectordrawable-animated-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/2fc82853a8e5c58b9f64f2a0192e63f7/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/2fc82853a8e5c58b9f64f2a0192e63f7/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/99899b7417b56b9a4891453cbe98d818/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/99899b7417b56b9a4891453cbe98d818/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:middleware:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/bebd3e2acb38c3299488beb1f0d4f22b/transformed/jetified-middleware-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:middleware:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/bebd3e2acb38c3299488beb1f0d4f22b/transformed/jetified-middleware-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:ui-common:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/8bb6c4d36e1f9232abf57d0b7e67155b/transformed/jetified-ui-common-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:ui-common:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/8bb6c4d36e1f9232abf57d0b7e67155b/transformed/jetified-ui-common-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:soloader:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/5d773a03378294b188b00fe879e5e068/transformed/jetified-soloader-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:soloader:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/5d773a03378294b188b00fe879e5e068/transformed/jetified-soloader-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.10.3] /home/cpa-dev2/.gradle/caches/transforms-3/042d5b5951bfd2ab3d3dc1b0078309da/transformed/jetified-soloader-0.10.3/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.10.3] /home/cpa-dev2/.gradle/caches/transforms-3/042d5b5951bfd2ab3d3dc1b0078309da/transformed/jetified-soloader-0.10.3/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/9bc1c5594cafbe7104b820c3d371476d/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/9bc1c5594cafbe7104b820c3d371476d/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /home/cpa-dev2/.gradle/caches/transforms-3/286ff182151276900197b666475c2562/transformed/vectordrawable-1.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /home/cpa-dev2/.gradle/caches/transforms-3/286ff182151276900197b666475c2562/transformed/vectordrawable-1.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/2be8c73b2953bfd5b80514a2df6b487f/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/2be8c73b2953bfd5b80514a2df6b487f/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/7b382c297aa17f21f7b6fdc92cbc805b/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/7b382c297aa17f21f7b6fdc92cbc805b/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/f6b401bdd1931554ba2b5b01353608fb/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/f6b401bdd1931554ba2b5b01353608fb/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/74f74d3808767235875f5c420f080704/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/74f74d3808767235875f5c420f080704/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/dc047a6e1531fbecf27d574d3ed8da2a/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/dc047a6e1531fbecf27d574d3ed8da2a/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/d3af9146b079501a9b4d66ffb9d0bfbe/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/d3af9146b079501a9b4d66ffb9d0bfbe/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/2fe6edeaa018ca1302c3133c50357b12/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/2fe6edeaa018ca1302c3133c50357b12/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0] /home/cpa-dev2/.gradle/caches/transforms-3/a3120de29325a2c9fe395964e8b69e47/transformed/core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] /home/cpa-dev2/.gradle/caches/transforms-3/a3120de29325a2c9fe395964e8b69e47/transformed/core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/cpa-dev2/.gradle/caches/transforms-3/bc12a52300125437bdb84cf592397e18/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/cpa-dev2/.gradle/caches/transforms-3/bc12a52300125437bdb84cf592397e18/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/1b5b8e2a316ca4d25c1ff11c6dcbff4e/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/1b5b8e2a316ca4d25c1ff11c6dcbff4e/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/1a920f8c718331d1f8a08144d155d29a/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/1a920f8c718331d1f8a08144d155d29a/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/ceb62d2223baa531d169885c607a73a6/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/ceb62d2223baa531d169885c607a73a6/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/a2b6d39a167f61565e104fb617ae96ce/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/a2b6d39a167f61565e104fb617ae96ce/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/0c45c5a2285f4e43d1182c54ab2c5220/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/0c45c5a2285f4e43d1182c54ab2c5220/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/d5a449ec13c6954ecd9f20166af0a839/transformed/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/d5a449ec13c6954ecd9f20166af0a839/transformed/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/904a45cbb6f0cedfd75e4e4cc32a6380/transformed/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/904a45cbb6f0cedfd75e4e4cc32a6380/transformed/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/20b6e4479e0b8612ea5f0863aa44c3ac/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/20b6e4479e0b8612ea5f0863aa44c3ac/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/ad9a40210ea1327a50bf07957b0268b6/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/ad9a40210ea1327a50bf07957b0268b6/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/758465d9b90dd05d7e4427e7698d7c60/transformed/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/758465d9b90dd05d7e4427e7698d7c60/transformed/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fbcore:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/c9d4dfb82b9847423cd72e89b4baf280/transformed/jetified-fbcore-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.5.0] /home/cpa-dev2/.gradle/caches/transforms-3/c9d4dfb82b9847423cd72e89b4baf280/transformed/jetified-fbcore-2.5.0/AndroidManifest.xml:5:5-7:41
+	android:targetSdkVersion
+		INJECTED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/debug/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/debug/AndroidManifest.xml
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/649c2e47dcb2d45293309a7a28c241a2/transformed/jetified-firebase-messaging-19.0.0/AndroidManifest.xml:28:9-34:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/649c2e47dcb2d45293309a7a28c241a2/transformed/jetified-firebase-messaging-19.0.0/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/649c2e47dcb2d45293309a7a28c241a2/transformed/jetified-firebase-messaging-19.0.0/AndroidManifest.xml:29:13-82
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.android.gms:play-services-measurement-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/a77df2d3e0dee2db2ce13ef18cfba07a/transformed/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/6ffe22846a02a1d90d394cdab7beab58/transformed/jetified-firebase-iid-19.0.0/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/6ffe22846a02a1d90d394cdab7beab58/transformed/jetified-firebase-iid-19.0.0/AndroidManifest.xml:29:9-35:19
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/a77df2d3e0dee2db2ce13ef18cfba07a/transformed/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:29:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/a77df2d3e0dee2db2ce13ef18cfba07a/transformed/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:28:13-84
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.android.gms:play-services-measurement-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/a77df2d3e0dee2db2ce13ef18cfba07a/transformed/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:30:13-32:85
+	android:value
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/a77df2d3e0dee2db2ce13ef18cfba07a/transformed/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:32:17-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/a77df2d3e0dee2db2ce13ef18cfba07a/transformed/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:31:17-139
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/6ffe22846a02a1d90d394cdab7beab58/transformed/jetified-firebase-iid-19.0.0/AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/6ffe22846a02a1d90d394cdab7beab58/transformed/jetified-firebase-iid-19.0.0/AndroidManifest.xml:26:22-79
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/6ffe22846a02a1d90d394cdab7beab58/transformed/jetified-firebase-iid-19.0.0/AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/6ffe22846a02a1d90d394cdab7beab58/transformed/jetified-firebase-iid-19.0.0/AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/6ffe22846a02a1d90d394cdab7beab58/transformed/jetified-firebase-iid-19.0.0/AndroidManifest.xml:33:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/6ffe22846a02a1d90d394cdab7beab58/transformed/jetified-firebase-iid-19.0.0/AndroidManifest.xml:37:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/6ffe22846a02a1d90d394cdab7beab58/transformed/jetified-firebase-iid-19.0.0/AndroidManifest.xml:39:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/6ffe22846a02a1d90d394cdab7beab58/transformed/jetified-firebase-iid-19.0.0/AndroidManifest.xml:40:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/6ffe22846a02a1d90d394cdab7beab58/transformed/jetified-firebase-iid-19.0.0/AndroidManifest.xml:38:13-78
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:18.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/fd925a0203d58e3db46a4fae8bc16ae6/transformed/jetified-firebase-common-18.0.0/AndroidManifest.xml:12:9-16:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:18.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/fd925a0203d58e3db46a4fae8bc16ae6/transformed/jetified-firebase-common-18.0.0/AndroidManifest.xml:14:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:18.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/fd925a0203d58e3db46a4fae8bc16ae6/transformed/jetified-firebase-common-18.0.0/AndroidManifest.xml:15:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:18.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/fd925a0203d58e3db46a4fae8bc16ae6/transformed/jetified-firebase-common-18.0.0/AndroidManifest.xml:16:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:18.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/fd925a0203d58e3db46a4fae8bc16ae6/transformed/jetified-firebase-common-18.0.0/AndroidManifest.xml:13:13-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/903109ea5d20587f5e66dbd669c2cddc/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/903109ea5d20587f5e66dbd669c2cddc/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/903109ea5d20587f5e66dbd669c2cddc/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/903109ea5d20587f5e66dbd669c2cddc/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/df5c7757d28b6daa3661ad07c3300635/transformed/jetified-play-services-measurement-impl-17.0.0/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/df5c7757d28b6daa3661ad07c3300635/transformed/jetified-play-services-measurement-impl-17.0.0/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/8c278bc94c8e7d83b374c01684e6f49f/transformed/jetified-play-services-measurement-sdk-api-17.0.0/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/8c278bc94c8e7d83b374c01684e6f49f/transformed/jetified-play-services-measurement-sdk-api-17.0.0/AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:30:13-85
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:34:9-42:20
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/df5c7757d28b6daa3661ad07c3300635/transformed/jetified-play-services-measurement-impl-17.0.0/AndroidManifest.xml:29:9-37:20
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/df5c7757d28b6daa3661ad07c3300635/transformed/jetified-play-services-measurement-impl-17.0.0/AndroidManifest.xml:29:9-37:20
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/8c278bc94c8e7d83b374c01684e6f49f/transformed/jetified-play-services-measurement-sdk-api-17.0.0/AndroidManifest.xml:29:9-37:20
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/8c278bc94c8e7d83b374c01684e6f49f/transformed/jetified-play-services-measurement-sdk-api-17.0.0/AndroidManifest.xml:29:9-37:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:36:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:37:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:38:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:35:13-100
+intent-filter#action:name:com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:39:13-41:29
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:40:17-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:40:25-76
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:44:9-47:40
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:46:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:45:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:48:9-52:72
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:50:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:51:13-37
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:52:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:49:13-87
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/ae439be4813e465eca40b608cec27f34/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/ae439be4813e465eca40b608cec27f34/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/ae439be4813e465eca40b608cec27f34/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58

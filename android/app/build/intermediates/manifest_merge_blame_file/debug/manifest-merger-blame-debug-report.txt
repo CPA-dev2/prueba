@@ -1,0 +1,358 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.prendacreditoavanza"
+4    android:versionCode="30"
+5    android:versionName="1.2.2" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:12:5-77
+11-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:12:22-75
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:4:5-67
+12-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:4:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:5:5-79
+13-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:5:22-76
+14    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- NECESARIO para Android 13+ -->
+14-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:6:5-77
+14-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:6:22-74
+15    <!-- Para Android 10+ usa estos permisos en lugar de WRITE/READ_EXTERNAL_STORAGE -->
+16    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+16-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:9:5-76
+16-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:9:22-73
+17    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+17-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:10:5-75
+17-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:10:22-72
+18    <uses-permission android:name="android.permission.CAMERA" />
+18-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:13:5-65
+18-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:13:22-62
+19    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+19-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:14:5-80
+19-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:14:22-78
+20    <uses-permission android:name="android.permission.VIBRATE" />
+20-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:15:5-66
+20-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:15:22-63
+21    <uses-permission android:name="android.permission.WAKE_LOCK" />
+21-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:16:5-68
+21-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:16:22-65
+22    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+22-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:17:5-76
+22-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:17:22-73
+23    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+23-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:18:5-79
+23-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:18:22-76
+24
+25    <uses-feature android:name="android.hardware.camera" />
+25-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:20:5-60
+25-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:20:19-57
+26    <uses-feature android:name="android.hardware.camera.autofocus" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+26-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:21:5-70
+26-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:21:19-67
+27    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+27-->[com.google.firebase:firebase-iid:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/6ffe22846a02a1d90d394cdab7beab58/transformed/jetified-firebase-iid-19.0.0/AndroidManifest.xml:26:5-82
+27-->[com.google.firebase:firebase-iid:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/6ffe22846a02a1d90d394cdab7beab58/transformed/jetified-firebase-iid-19.0.0/AndroidManifest.xml:26:22-79
+28    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+28-->[com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:26:5-110
+28-->[com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:26:22-107
+29
+30    <application
+30-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:23:5-118:19
+31        android:name="com.prendacreditoavanza.MainApplication"
+31-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:24:7-38
+32        android:allowBackup="true"
+32-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:28:7-33
+33        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+33-->[androidx.core:core:1.1.0] /home/cpa-dev2/.gradle/caches/transforms-3/a3120de29325a2c9fe395964e8b69e47/transformed/core-1.1.0/AndroidManifest.xml:24:18-86
+34        android:debuggable="true"
+35        android:extractNativeLibs="true"
+36        android:icon="@mipmap/ic_launcher"
+36-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:26:7-41
+37        android:label="@string/app_name"
+37-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:25:7-39
+38        android:requestLegacyExternalStorage="true"
+38-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:29:7-50
+39        android:roundIcon="@mipmap/ic_launcher_round"
+39-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:27:7-52
+40        android:theme="@style/AppTheme"
+40-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:30:7-38
+41        android:usesCleartextTraffic="true" > <!-- IMPORTANTE: tools:replace -->
+41-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/debug/AndroidManifest.xml:7:18-53
+42        <!-- NOTIFICACIONES - Configuración actualizada -->
+43        <meta-data
+43-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:35:9-37:54
+44            android:name="com.google.firebase.messaging.default_notification_icon"
+44-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:36:13-83
+45            android:resource="@mipmap/ic_launcher" /> <!-- Cambia @drawable/icono a @drawable/ic_launcher -->
+45-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:37:13-51
+46        <service
+46-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:39:9-45:19
+47            android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationListenerService"
+47-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:40:13-107
+48            android:exported="false" >
+48-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:41:13-37
+49            <intent-filter>
+49-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:42:13-44:29
+50                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+50-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:43:17-81
+50-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:43:25-78
+51            </intent-filter>
+52        </service>
+53
+54        <receiver
+54-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:47:9-49:40
+55            android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationActions"
+55-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:48:13-99
+56            android:exported="false" />
+56-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:49:13-37
+57        <receiver
+57-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:51:9-53:40
+58            android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationPublisher"
+58-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:52:13-101
+59            android:exported="false" />
+59-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:53:13-37
+60        <receiver
+60-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:55:9-61:20
+61            android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationBootEventReceiver"
+61-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:56:13-109
+62            android:exported="true" >
+62-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:57:13-36
+63            <intent-filter>
+63-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:58:13-60:29
+64                <action android:name="android.intent.action.BOOT_COMPLETED" />
+64-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:59:17-79
+64-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:59:25-76
+65            </intent-filter>
+66        </receiver>
+67        <receiver
+67-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:63:9-65:40
+68            android:name="io.invertase.firebase.messaging.RNFirebaseLocalMessagingPublisher"
+68-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:64:13-93
+69            android:exported="false" />
+69-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:65:13-37
+70        <receiver
+70-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:67:9-76:20
+71            android:name="io.invertase.firebase.messaging.RNFirebaseSystemBootEventReceiver"
+71-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:68:13-93
+72            android:exported="true" >
+72-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:69:13-36
+73            <intent-filter>
+73-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:70:13-75:29
+74                <action android:name="android.intent.action.BOOT_COMPLETED" />
+74-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:59:17-79
+74-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:59:25-76
+75                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+75-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:72:17-81
+75-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:72:25-79
+76                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+76-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:73:17-81
+76-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:73:25-79
+77
+78                <category android:name="android.intent.category.DEFAULT" />
+78-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:74:17-76
+78-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:74:27-73
+79            </intent-filter>
+80        </receiver>
+81        <receiver
+81-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:78:9-80:40
+82            android:name="io.invertase.firebase.notifications.RNFirebaseNotificationReceiver"
+82-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:79:13-94
+83            android:exported="false" />
+83-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:80:13-37
+84        <receiver
+84-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:82:9-91:20
+85            android:name="io.invertase.firebase.notifications.RNFirebaseNotificationsRebootReceiver"
+85-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:83:13-101
+86            android:exported="true" >
+86-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:84:13-36
+87            <intent-filter>
+87-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:70:13-75:29
+88                <action android:name="android.intent.action.BOOT_COMPLETED" />
+88-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:59:17-79
+88-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:59:25-76
+89                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+89-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:72:17-81
+89-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:72:25-79
+90                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+90-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:73:17-81
+90-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:73:25-79
+91
+92                <category android:name="android.intent.category.DEFAULT" />
+92-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:74:17-76
+92-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:74:27-73
+93            </intent-filter>
+94        </receiver> <!-- ACTIVIDAD PRINCIPAL -->
+95        <activity
+95-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:94:7-106:18
+96            android:name="com.prendacreditoavanza.MainActivity"
+96-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:95:9-37
+97            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+97-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:98:9-118
+98            android:exported="true"
+98-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:99:9-32
+99            android:label="@string/app_name"
+99-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:96:9-41
+100            android:launchMode="singleTop"
+100-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:97:9-39
+101            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+101-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:101:9-65
+102            android:windowSoftInputMode="adjustResize" >
+102-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:100:9-51
+103            <intent-filter>
+103-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:102:9-105:25
+104                <action android:name="android.intent.action.MAIN" />
+104-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:103:13-65
+104-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:103:21-62
+105
+106                <category android:name="android.intent.category.LAUNCHER" />
+106-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:104:13-73
+106-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:104:23-70
+107            </intent-filter>
+108        </activity>
+109        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" /> <!-- SERVICIOS DE FIREBASE (si los usas) -->
+109-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:108:7-84
+109-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:108:17-81
+110        <service
+110-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:111:7-117:17
+111            android:name="com.prendacreditoavanza.firebase.MessagingService"
+111-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:112:11-52
+112            android:exported="false" >
+112-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:113:11-35
+113            <intent-filter>
+113-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:114:11-116:27
+114                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+114-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:115:15-76
+114-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:115:23-73
+115            </intent-filter>
+116        </service>
+117        <!--
+118             FirebaseMessagingService performs security checks at runtime,
+119             but set to not exported to explicitly avoid allowing another app to call it.
+120        -->
+121        <service
+121-->[com.google.firebase:firebase-messaging:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/649c2e47dcb2d45293309a7a28c241a2/transformed/jetified-firebase-messaging-19.0.0/AndroidManifest.xml:28:9-34:19
+122            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+122-->[com.google.firebase:firebase-messaging:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/649c2e47dcb2d45293309a7a28c241a2/transformed/jetified-firebase-messaging-19.0.0/AndroidManifest.xml:29:13-82
+123            android:exported="false" >
+123-->[com.google.firebase:firebase-messaging:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/649c2e47dcb2d45293309a7a28c241a2/transformed/jetified-firebase-messaging-19.0.0/AndroidManifest.xml:30:13-37
+124            <intent-filter android:priority="-500" >
+124-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:114:11-116:27
+125                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+125-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:115:15-76
+125-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:115:23-73
+126            </intent-filter>
+127        </service>
+128        <service
+128-->[com.google.android.gms:play-services-measurement-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/a77df2d3e0dee2db2ce13ef18cfba07a/transformed/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:27:9-33:19
+129            android:name="com.google.firebase.components.ComponentDiscoveryService"
+129-->[com.google.android.gms:play-services-measurement-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/a77df2d3e0dee2db2ce13ef18cfba07a/transformed/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:28:13-84
+130            android:exported="false" >
+130-->[com.google.android.gms:play-services-measurement-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/a77df2d3e0dee2db2ce13ef18cfba07a/transformed/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:29:13-37
+131            <meta-data
+131-->[com.google.android.gms:play-services-measurement-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/a77df2d3e0dee2db2ce13ef18cfba07a/transformed/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:30:13-32:85
+132                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+132-->[com.google.android.gms:play-services-measurement-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/a77df2d3e0dee2db2ce13ef18cfba07a/transformed/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:31:17-139
+133                android:value="com.google.firebase.components.ComponentRegistrar" />
+133-->[com.google.android.gms:play-services-measurement-api:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/a77df2d3e0dee2db2ce13ef18cfba07a/transformed/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:32:17-82
+134            <meta-data
+134-->[com.google.firebase:firebase-iid:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/6ffe22846a02a1d90d394cdab7beab58/transformed/jetified-firebase-iid-19.0.0/AndroidManifest.xml:32:13-34:85
+135                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+135-->[com.google.firebase:firebase-iid:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/6ffe22846a02a1d90d394cdab7beab58/transformed/jetified-firebase-iid-19.0.0/AndroidManifest.xml:33:17-96
+136                android:value="com.google.firebase.components.ComponentRegistrar" />
+136-->[com.google.firebase:firebase-iid:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/6ffe22846a02a1d90d394cdab7beab58/transformed/jetified-firebase-iid-19.0.0/AndroidManifest.xml:34:17-82
+137        </service>
+138
+139        <receiver
+139-->[com.google.firebase:firebase-iid:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/6ffe22846a02a1d90d394cdab7beab58/transformed/jetified-firebase-iid-19.0.0/AndroidManifest.xml:37:9-44:20
+140            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+140-->[com.google.firebase:firebase-iid:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/6ffe22846a02a1d90d394cdab7beab58/transformed/jetified-firebase-iid-19.0.0/AndroidManifest.xml:38:13-78
+141            android:exported="true"
+141-->[com.google.firebase:firebase-iid:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/6ffe22846a02a1d90d394cdab7beab58/transformed/jetified-firebase-iid-19.0.0/AndroidManifest.xml:39:13-36
+142            android:permission="com.google.android.c2dm.permission.SEND" >
+142-->[com.google.firebase:firebase-iid:19.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/6ffe22846a02a1d90d394cdab7beab58/transformed/jetified-firebase-iid-19.0.0/AndroidManifest.xml:40:13-73
+143            <intent-filter>
+143-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:42:13-44:29
+144                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+144-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:43:17-81
+144-->/home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/AndroidManifest.xml:43:25-78
+145            </intent-filter>
+146        </receiver>
+147
+148        <provider
+148-->[com.google.firebase:firebase-common:18.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/fd925a0203d58e3db46a4fae8bc16ae6/transformed/jetified-firebase-common-18.0.0/AndroidManifest.xml:12:9-16:39
+149            android:name="com.google.firebase.provider.FirebaseInitProvider"
+149-->[com.google.firebase:firebase-common:18.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/fd925a0203d58e3db46a4fae8bc16ae6/transformed/jetified-firebase-common-18.0.0/AndroidManifest.xml:13:13-77
+150            android:authorities="com.prendacreditoavanza.firebaseinitprovider"
+150-->[com.google.firebase:firebase-common:18.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/fd925a0203d58e3db46a4fae8bc16ae6/transformed/jetified-firebase-common-18.0.0/AndroidManifest.xml:14:13-72
+151            android:exported="false"
+151-->[com.google.firebase:firebase-common:18.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/fd925a0203d58e3db46a4fae8bc16ae6/transformed/jetified-firebase-common-18.0.0/AndroidManifest.xml:15:13-37
+152            android:initOrder="100" />
+152-->[com.google.firebase:firebase-common:18.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/fd925a0203d58e3db46a4fae8bc16ae6/transformed/jetified-firebase-common-18.0.0/AndroidManifest.xml:16:13-36
+153
+154        <activity
+154-->[com.google.android.gms:play-services-base:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/903109ea5d20587f5e66dbd669c2cddc/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+155            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+155-->[com.google.android.gms:play-services-base:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/903109ea5d20587f5e66dbd669c2cddc/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+156            android:exported="false"
+156-->[com.google.android.gms:play-services-base:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/903109ea5d20587f5e66dbd669c2cddc/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+157            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+157-->[com.google.android.gms:play-services-base:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/903109ea5d20587f5e66dbd669c2cddc/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+158
+159        <receiver
+159-->[com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:29:9-33:20
+160            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+160-->[com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:30:13-85
+161            android:enabled="true"
+161-->[com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:31:13-35
+162            android:exported="false" >
+162-->[com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:32:13-37
+163        </receiver>
+164        <receiver
+164-->[com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:34:9-42:20
+165            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+165-->[com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:35:13-100
+166            android:enabled="true"
+166-->[com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:36:13-35
+167            android:exported="true"
+167-->[com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:37:13-36
+168            android:permission="android.permission.INSTALL_PACKAGES" >
+168-->[com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:38:13-69
+169            <intent-filter>
+169-->[com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:39:13-41:29
+170                <action android:name="com.android.vending.INSTALL_REFERRER" />
+170-->[com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:40:17-79
+170-->[com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:40:25-76
+171            </intent-filter>
+172        </receiver>
+173
+174        <service
+174-->[com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:44:9-47:40
+175            android:name="com.google.android.gms.measurement.AppMeasurementService"
+175-->[com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:45:13-84
+176            android:enabled="true"
+176-->[com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:46:13-35
+177            android:exported="false" />
+177-->[com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:47:13-37
+178        <service
+178-->[com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:48:9-52:72
+179            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+179-->[com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:49:13-87
+180            android:enabled="true"
+180-->[com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:50:13-35
+181            android:exported="false"
+181-->[com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:51:13-37
+182            android:permission="android.permission.BIND_JOB_SERVICE" />
+182-->[com.google.android.gms:play-services-measurement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/cdc8f16c1a0e06d37d014e434da57d73/transformed/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:52:13-69
+183
+184        <meta-data
+184-->[com.google.android.gms:play-services-basement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/ae439be4813e465eca40b608cec27f34/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+185            android:name="com.google.android.gms.version"
+185-->[com.google.android.gms:play-services-basement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/ae439be4813e465eca40b608cec27f34/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+186            android:value="@integer/google_play_services_version" />
+186-->[com.google.android.gms:play-services-basement:17.0.0] /home/cpa-dev2/.gradle/caches/transforms-3/ae439be4813e465eca40b608cec27f34/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+187    </application>
+188
+189</manifest>

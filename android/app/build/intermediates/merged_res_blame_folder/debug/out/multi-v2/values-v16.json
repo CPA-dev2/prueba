@@ -1,0 +1,38 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.prendacreditoavanza.app-mergeDebugResources-12:/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/home/cpa-dev2/.gradle/caches/transforms-3/a3120de29325a2c9fe395964e8b69e47/transformed/core-1.1.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "/home/cpa-dev2/.gradle/caches/transforms-3/ed5764237cd4a048ed568321050770c4/transformed/appcompat-1.0.2/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                }
+            ]
+        }
+    ]
+}

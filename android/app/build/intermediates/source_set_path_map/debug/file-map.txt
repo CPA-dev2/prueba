@@ -1,0 +1,17 @@
+com.prendacreditoavanza.app-jetified-autofill-1.1.0-0 /home/cpa-dev2/.gradle/caches/transforms-3/1089df71edc0ffc6ca46216565e541dd/transformed/jetified-autofill-1.1.0/res
+com.prendacreditoavanza.app-jetified-firebase-messaging-19.0.0-1 /home/cpa-dev2/.gradle/caches/transforms-3/649c2e47dcb2d45293309a7a28c241a2/transformed/jetified-firebase-messaging-19.0.0/res
+com.prendacreditoavanza.app-jetified-play-services-base-17.0.0-2 /home/cpa-dev2/.gradle/caches/transforms-3/903109ea5d20587f5e66dbd669c2cddc/transformed/jetified-play-services-base-17.0.0/res
+com.prendacreditoavanza.app-core-1.1.0-3 /home/cpa-dev2/.gradle/caches/transforms-3/a3120de29325a2c9fe395964e8b69e47/transformed/core-1.1.0/res
+com.prendacreditoavanza.app-jetified-drawee-2.5.0-4 /home/cpa-dev2/.gradle/caches/transforms-3/a3922fc13180e69060d58e967fd793ef/transformed/jetified-drawee-2.5.0/res
+com.prendacreditoavanza.app-jetified-play-services-basement-17.0.0-5 /home/cpa-dev2/.gradle/caches/transforms-3/ae439be4813e465eca40b608cec27f34/transformed/jetified-play-services-basement-17.0.0/res
+com.prendacreditoavanza.app-appcompat-1.0.2-6 /home/cpa-dev2/.gradle/caches/transforms-3/ed5764237cd4a048ed568321050770c4/transformed/appcompat-1.0.2/res
+com.prendacreditoavanza.app-jetified-react-native-0.68.7-7 /home/cpa-dev2/.gradle/caches/transforms-3/f4b0c61c6a3c022749ff04f07a695705/transformed/jetified-react-native-0.68.7/res
+com.prendacreditoavanza.app-coordinatorlayout-1.0.0-8 /home/cpa-dev2/.gradle/caches/transforms-3/f6b401bdd1931554ba2b5b01353608fb/transformed/coordinatorlayout-1.0.0/res
+com.prendacreditoavanza.app-pngs-9 /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/build/generated/res/pngs/debug
+com.prendacreditoavanza.app-res-10 /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/build/generated/res/processDebugGoogleServices
+com.prendacreditoavanza.app-resValues-11 /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/build/generated/res/resValues/debug
+com.prendacreditoavanza.app-packageDebugResources-12 /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.prendacreditoavanza.app-packageDebugResources-13 /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.prendacreditoavanza.app-merged_res-14 /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/build/intermediates/merged_res/debug
+com.prendacreditoavanza.app-debug-15 /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/debug/res
+com.prendacreditoavanza.app-main-16 /home/cpa-dev2/Escritorio/Proyectos/Prenda/MovilPrendaCredito/android/app/src/main/res
