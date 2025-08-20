@@ -1,67 +1,87 @@
-import React, { Component } from 'react';
-import { Container, Spinner, Button, Text, View, Icon, Item, Input,Toast } from "native-base";
+import React, { useState } from 'react';
+import {
+  Box,
+  Button,
+  ButtonText,
+  Heading,
+  Input,
+  InputField,
+  InputSlot,
+  InputIcon,
+  SearchIcon,
+  Spinner,
+  useToast,
+  Toast,
+  VStack,
+  Text,
+} from "@gluestack-ui/themed";
 import { Keyboard } from "react-native";
 import styles from "./styles";
 import { estilos } from "../../../utils/estilos";
 import { validations } from "../../../utils/validation";
 import Navbar from "../../../container/NavbarContainer/NavbarContainer";
 
-class BusquedaCliente extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {paso: 1, dpi: ''};
-    this.validarDpi = this.validarDpi.bind(this);
-  }
-  UNSAFE_componentWillMount(){
-    this.setState({dpi: ''});
-  }
+const BusquedaCliente = (props) => {
+  const [dpi, setDpi] = useState('');
+  const toast = useToast();
 
-  validarDpi(){
-    if(this.state.dpi===""){
-      Toast.show({
-        text: "Ingrese un DPI valido",
-        duration: 2000,
-        position: "top",
-        textStyle: { textAlign: "center" }
+  const validarDpi = () => {
+    if (dpi === "") {
+      toast.show({
+        placement: "top",
+        render: ({ id }) => {
+          return (
+            <Toast nativeID={id} variant="accent" action="error">
+              <VStack space="xs">
+                <Text>Ingrese un DPI valido</Text>
+              </VStack>
+            </Toast>
+          );
+        },
       });
       return;
     }
-    this.props.verificarDPI(this.state.dpi, this.props.navigation);
-    console.log(this.state.dpi);
-  }
+    props.verificarDPI(dpi, props.navigation);
+    console.log(dpi);
+  };
 
-  render() {
-    const { loader, navigation } = this.props;
-    return (
-      <Container style={estilos.fondoBlanco}>
-        <Navbar titulo={"Nuevo cliente"} navigation={navigation} regresar={() => navigation.popToTop()}/>
-        <View style={styles.content}>
-          <Text style={styles.buscar}>Buscar por medio de DPI</Text>
-          <Item style={styles.busqueda_container}>
-            <Input keyboardType={"numeric"} style={styles.busqueda} placeholder=""
-                   onSubmitEditing={() => {
-                     Keyboard.dismiss();
-                     this.props.verificarDPI(this.state.dpi, navigation);
-                   }} onChangeText={dpi => this.setState({dpi})}/>
-            <Text style={estilos.inputError}>{validations.dpi(this.state.dpi)}</Text>
-            <Icon style={styles.busqueda} name="search"/>
-          </Item>
-        </View>
-        <View padder>
-          <Button style={styles.boton} block 
-            onPress={() => {
-              this.validarDpi();
-              Keyboard.dismiss()
-              // this.props.verificarDPI(this.state.dpi, navigation);
+  const { loader, navigation } = props;
+
+  return (
+    <Box flex={1} bg="$white">
+      <Navbar titulo={"Nuevo cliente"} navigation={navigation} regresar={() => navigation.popToTop()}/>
+      <Box p="$4">
+        <Heading style={styles.buscar}>Buscar por medio de DPI</Heading>
+        <Input style={styles.busqueda_container}>
+          <InputField
+            keyboardType="numeric"
+            placeholder=""
+            value={dpi}
+            onChangeText={setDpi}
+            onSubmitEditing={() => {
+              Keyboard.dismiss();
+              props.verificarDPI(dpi, navigation);
             }}
-          >
-            {(loader) && (<Spinner color="#fff" size={20} style={{padding:10}} />)}
-            <Text>Siguiente</Text>
-          </Button>
-        </View>
-      </Container>
-    );
-  }
-}
+          />
+          <InputSlot pr="$3">
+            <InputIcon as={SearchIcon} />
+          </InputSlot>
+        </Input>
+        <Text style={estilos.inputError}>{validations.dpi(dpi)}</Text>
+      </Box>
+      <Box p="$4">
+        <Button
+          style={styles.boton}
+          onPress={() => {
+            validarDpi();
+            Keyboard.dismiss();
+          }}
+        >
+          {loader ? <Spinner color="$white" /> : <ButtonText>Siguiente</ButtonText>}
+        </Button>
+      </Box>
+    </Box>
+  );
+};
 
 export default BusquedaCliente;

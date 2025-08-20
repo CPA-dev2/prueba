@@ -11,7 +11,8 @@ import {launchCamera, launchImageLibrary, } from 'react-native-image-picker';
 
 const RNFS = require('react-native-fs');
 
-import {Alert, PermissionsAndroid} from "react-native";
+import {Alert, PermissionsAndroid, Platform} from "react-native";
+import { request, PERMISSIONS, RESULTS } from 'react-native-permissions';
 
 
 export default function ModalImagen({modalImage, cerrarModal,peticion,fotoTemporal}) {
@@ -28,14 +29,17 @@ export default function ModalImagen({modalImage, cerrarModal,peticion,fotoTempor
         };
     
         if (opcion === 1){
-            const granted = await PermissionsAndroid.request(
-                PermissionsAndroid.PERMISSIONS.CAMERA,
-                {
-                  'title': 'Por favor habilite la camara',
-                  'message': 'La aplicación necesita que habilite la camara'
-                }
-            );
-            if (granted === PermissionsAndroid.RESULTS.GRANTED){
+            const cameraPermission = Platform.select({
+              android: PERMISSIONS.ANDROID.CAMERA,
+              ios: PERMISSIONS.IOS.CAMERA,
+            });
+            const result = await request(cameraPermission, {
+              title: 'Por favor habilite la camara',
+              message: 'La aplicación necesita que habilite la camara',
+              buttonPositive: 'Habilitar',
+            });
+
+            if (result === RESULTS.GRANTED){
                 launchCamera(options, response => {
                     console.log(response, "------Response x")
                     if (response.didCancel) {

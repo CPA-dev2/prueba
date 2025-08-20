@@ -10,6 +10,7 @@ import {useNotifications } from '@react-native-firebase/app'
 import { newToken} from "./actions";
 import {setLatitud, setLongitud, setPeticionesGPS} from "../../reducers/modules/comun";
 import {Alert, PermissionsAndroid,Platform } from "react-native";
+import { request, PERMISSIONS, RESULTS } from 'react-native-permissions';
 import Geolocation from "react-native-geolocation-service";
 import messaging from '@react-native-firebase/messaging';
 
@@ -47,70 +48,37 @@ class HomeContainer extends React.Component<Props, State> {
 
   async requestWriteExternalStoragePermission() {
     try {
-      if(Platform.Version < 33){
-        const granted = await PermissionsAndroid.request(
-          PermissionsAndroid.PERMISSIONS.WRITE_EXTERNAL_STORAGE,
-          {
-            title: "Necesitamos habilite permisos de almacenamiento",
-            message:
-              "Necesitamos acceder al sistema de archivos para realizar la exportación de PDF's.",
-            buttonNeutral: "Preguntar después",
-            buttonNegative: "Cancelar",
-            buttonPositive: "Habilitar"
-          }
-        );
-        if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-          // eslint-disable-next-line no-console
+      if (Platform.OS === 'android' && Platform.Version < 33) {
+        const result = await request(PERMISSIONS.ANDROID.WRITE_EXTERNAL_STORAGE, {
+          title: "Necesitamos habilite permisos de almacenamiento",
+          message: "Necesitamos acceder al sistema de archivos para realizar la exportación de PDF's.",
+          buttonPositive: "Habilitar",
+          buttonNegative: "Cancelar",
+          buttonNeutral: "Preguntar después",
+        });
+        if (result === RESULTS.GRANTED) {
           console.log("You can use the file system");
-          
         } else {
           Alert.alert("ACTIVAR PERMISOS", "Es posible que algunas funciones no esten disponibles si no autoriza el permiso para utilizar el almacenamiento.");
         }
       }
-      
     } catch (err) {
-      // eslint-disable-next-line no-console
       console.warn(err);
     }
   }
 
   async requestLocationPermission() {
     try {
-      const granted = await PermissionsAndroid.request(
-        PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
-        {
-          'title': 'Por favor habilite el GPS',
-          'message': 'La aplicación necesita que habilite el GPS'
-        }
-      );
-      if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-        Geolocation.getCurrentPosition(
-          (position) => {
-            if (position){
-              const lat = position.coords.latitude;
-              const long = position.coords.longitude;
-              this.props.setLatitud(lat);
-              this.props.setLongitud(long);
-            }
-          },
-          (error) => {
-            // error 2 (No location provider available) = No se tiene encendido el GPS
-            Alert.alert(
-              "Error",
-              "ERROR" + error,
-              [
-                {text: 'Aceptar'}
-              ],
-              {cancelable: false}
-            );
-          },
-          { enableHighAccuracy: true, timeout: 60000, maximumAge: 60000 }
-        );
-      } else {
-        try {
+      if (Platform.OS === 'android') {
+        const result = await request(PERMISSIONS.ANDROID.ACCESS_FINE_LOCATION, {
+          title: "Por favor habilite el GPS",
+          message: "La aplicación necesita que habilite el GPS",
+          buttonPositive: "Habilitar",
+        });
+        if (result === RESULTS.GRANTED) {
           Geolocation.getCurrentPosition(
             (position) => {
-              if (position) {
+              if (position){
                 const lat = position.coords.latitude;
                 const long = position.coords.longitude;
                 this.props.setLatitud(lat);
@@ -119,11 +87,62 @@ class HomeContainer extends React.Component<Props, State> {
             },
             (error) => {
               // error 2 (No location provider available) = No se tiene encendido el GPS
+              Alert.alert(
+                "Error",
+                "ERROR" + error,
+                [
+                  {text: 'Aceptar'}
+                ],
+                {cancelable: false}
+              );
             },
-            {enableHighAccuracy: true, timeout: 60000, maximumAge: 60000}
+            { enableHighAccuracy: true, timeout: 60000, maximumAge: 60000 }
           );
+        } else {
+          try {
+            Geolocation.getCurrentPosition(
+              (position) => {
+                if (position) {
+                  const lat = position.coords.latitude;
+                  const long = position.coords.longitude;
+                  this.props.setLatitud(lat);
+                  this.props.setLongitud(long);
+                }
+              },
+              (error) => {
+                // error 2 (No location provider available) = No se tiene encendido el GPS
+              },
+              {enableHighAccuracy: true, timeout: 60000, maximumAge: 60000}
+            );
+          }
+          catch (e) {
+          }
         }
-        catch (e) {
+      } else if (Platform.OS === 'ios') {
+        const result = await request(PERMISSIONS.IOS.LOCATION_WHEN_IN_USE);
+        if (result === RESULTS.GRANTED) {
+          Geolocation.getCurrentPosition(
+            (position) => {
+              if (position){
+                const lat = position.coords.latitude;
+                const long = position.coords.longitude;
+                this.props.setLatitud(lat);
+                this.props.setLongitud(long);
+              }
+            },
+            (error) => {
+              // error 2 (No location provider available) = No se tiene encendido el GPS
+              Alert.alert(
+                "Error",
+                "ERROR" + error,
+                [
+                  {text: 'Aceptar'}
+                ],
+                {cancelable: false}
+              );
+            },
+            { enableHighAccuracy: true, timeout: 60000, maximumAge: 60000 }
+          );
         }
       }
     } catch (err) {

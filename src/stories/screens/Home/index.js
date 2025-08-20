@@ -1,22 +1,20 @@
 import * as React from "react";
 import {
-  Container,
-  Header,
-  Title,
-  Content,
+  Box,
+  Heading,
   Text,
   Button,
-  Body,
-  Right,
-  Item,
-  View,
+  ButtonIcon,
   Spinner,
-  Left,
-} from "native-base";
-import { Image, TouchableHighlight } from "react-native";
-import { estilos } from "../../../utils/estilos";
-import styles from "./styles";
-import { colors } from "../../../utils/colors";
+  HStack,
+  VStack,
+  Image,
+  Pressable,
+} from "@gluestack-ui/themed";
+import { ScrollView } from "react-native";
+import { estilos } from "../../../utils/estilos"; // This will probably need to be updated
+import styles from "./styles"; // This will probably need to be updated
+import { colors } from "../../../utils/colors"; // This will probably need to be updated
 
 export interface Props {
   navigation: any;
@@ -28,194 +26,178 @@ export interface State {}
 class Home extends React.Component<Props, State> {
   render() {
     return (
-      <Container style={styles.container}>
-        <Header style={estilos.navbar}>
-          <Left>
+      <Box flex={1} bg="$white">
+        <HStack
+          style={estilos.navbar} // I'll keep this for now, but it might need to be converted to utility props
+          alignItems="center"
+          p="$2"
+        >
+          <Box>
             <Button
-              style={styles.boton}
-              transparent
-              onPress={() => this.props.navigation.navigate("DrawerOpen")}
+              variant="link"
+              onPress={() => this.props.navigation.openDrawer()} // Updated for RNv6
             >
               <Image
-                style={styles.image}
+                style={styles.image} // This will need to be updated
                 source={require("../../../../images/logo-ico.png")}
+                alt="logo"
               />
             </Button>
-          </Left>
-          <Body>
+          </Box>
+          <Box flex={1} alignItems="center">
             {this.props.conteo !== 0 ? (
-              <Item>
-                <Spinner color="#000" size={20} style={{ padding: 10 }} />
-                <Text style={{ fontSize: 12 }}>
+              <HStack space="md" alignItems="center">
+                <Spinner color="$black" />
+                <Text size="sm">
                   Subiendo {this.props.conteo} imagenes, por favor no cierre el
                   app
                 </Text>
-              </Item>
+              </HStack>
             ) : (
-              <Title style={{ color: colors.Negro }}>Prenda crédito</Title>
+              <Heading color="$black">Prenda crédito</Heading>
             )}
-          </Body>
-          <Right />
-        </Header>
-        <Content>
+          </Box>
+          <Box />
+        </HStack>
+        <ScrollView>
           {this.props.login?.user?.perfil?.rol?.id === 17 && (
-            <Content>
-              <View style={styles.elemento_menu}>
-                <TouchableHighlight
-                  underlayColor={"#fff"}
-                  style={styles.boton_menu}
-                  transparent
+            <VStack>
+              <HStack justifyContent="space-around" m="$4">
+                <Pressable
                   onPress={() =>
                     this.props.navigation.navigate("ReporteGestiones")
                   }
                 >
-                  <View style={styles.c_boton_menu}>
-                    <View style={styles.image_shadow}>
+                  <VStack alignItems="center">
+                    <Box style={styles.image_shadow}>
                       <Image
                         style={styles.image_menu}
                         source={require("../../../../images/reporte_gestiones.png")}
+                        alt="reporte"
                       />
-                    </View>
-                    <Text style={styles.texto_menu}>Reporte</Text>
-                    <Text style={styles.texto_menu}>de Gestiones</Text>
-                  </View>
-                </TouchableHighlight>
-                <TouchableHighlight
-                  underlayColor={"#fff"}
-                  style={styles.boton_menu}
-                  transparent
+                    </Box>
+                    <Text>Reporte</Text>
+                    <Text>de Gestiones</Text>
+                  </VStack>
+                </Pressable>
+                <Pressable
                   onPress={() =>
-                    this.props.navigation.navigate("GenerarConvenio", {without_solicitud: true})
+                    this.props.navigation.navigate("GenerarConvenio", {
+                      without_solicitud: true,
+                    })
                   }
                 >
-                  <View style={styles.c_boton_menu}>
-                    <View style={styles.image_shadow}>
+                  <VStack alignItems="center">
+                    <Box style={styles.image_shadow}>
                       <Image
                         style={styles.image_menu}
                         source={require("../../../../images/generar_convenio.png")}
+                        alt="convenio"
                       />
-                    </View>
-                    <Text style={styles.texto_menu}>Generar</Text>
-                    <Text style={styles.texto_menu}>Convenio</Text>
-                  </View>
-                </TouchableHighlight>
-              </View>
-              <View style={styles.elemento_menu}>
-                <TouchableHighlight
-                  underlayColor={"#fff"}
-                  style={styles.boton_menu}
-                  transparent
+                    </Box>
+                    <Text>Generar</Text>
+                    <Text>Convenio</Text>
+                  </VStack>
+                </Pressable>
+              </HStack>
+              <HStack justifyContent="space-around" m="$4">
+                <Pressable
                   onPress={() =>
                     this.props.navigation.navigate("RutaCobranzaDificil")
                   }
                 >
-                  <View style={styles.c_boton_menu}>
-                    <View style={styles.image_shadow}>
+                  <VStack alignItems="center">
+                    <Box style={styles.image_shadow}>
                       <Image
                         style={styles.image_menu}
                         source={require("../../../../images/ruta_cd.png")}
+                        alt="ruta"
                       />
-                    </View>
-                    <Text style={styles.texto_menu}>Ruta</Text>
-                  </View>
-                </TouchableHighlight>
-                <TouchableHighlight
-                  underlayColor={"#fff"}
-                  style={styles.boton_menu}
-                  transparent
-                >
-                  <View style={styles.c_boton_menu}>
-                    <View style={styles.image_shadow} />
-                  </View>
-                </TouchableHighlight>
-              </View>
-            </Content>
+                    </Box>
+                    <Text>Ruta</Text>
+                  </VStack>
+                </Pressable>
+                <Box />
+              </HStack>
+            </VStack>
           )}
 
           {this.props.login?.user?.perfil?.rol?.id !== 17 && (
-            <Content>
-              <View style={styles.elemento_menu}>
-                <TouchableHighlight
-                  underlayColor={"#fff"}
-                  style={styles.boton_menu}
-                  transparent
+            <VStack>
+              <HStack justifyContent="space-around" m="$4">
+                <Pressable
                   onPress={() =>
                     this.props.navigation.navigate("BuscarClientes")
                   }
                 >
-                  <View style={styles.c_boton_menu}>
-                    <View style={styles.image_shadow}>
+                  <VStack alignItems="center">
+                    <Box style={styles.image_shadow}>
                       <Image
                         style={styles.image_menu}
                         source={require("../../../../images/nuevo_cliente.png")}
+                        alt="cliente"
                       />
-                    </View>
-                    <Text style={styles.texto_menu}>Nuevo</Text>
-                    <Text style={styles.texto_menu}>Cliente</Text>
-                  </View>
-                </TouchableHighlight>
-                <TouchableHighlight
-                  underlayColor={"#fff"}
-                  style={styles.boton_menu}
-                  transparent
+                    </Box>
+                    <Text>Nuevo</Text>
+                    <Text>Cliente</Text>
+                  </VStack>
+                </Pressable>
+                <Pressable
                   onPress={() =>
                     this.props.navigation.navigate("BuscarClientes")
                   }
                 >
-                  <View style={styles.c_boton_menu}>
-                    <View style={styles.image_shadow}>
+                  <VStack alignItems="center">
+                    <Box style={styles.image_shadow}>
                       <Image
                         style={styles.image_menu}
                         source={require("../../../../images/nueva_solicitud.png")}
+                        alt="solicitud"
                       />
-                    </View>
-                    <Text style={styles.texto_menu}>Nueva</Text>
-                    <Text style={styles.texto_menu}>Solicitud</Text>
-                  </View>
-                </TouchableHighlight>
-              </View>
-              <View style={styles.elemento_menu}>
-                <TouchableHighlight
-                  underlayColor={"#fff"}
-                  style={styles.boton_menu}
-                  transparent
+                    </Box>
+                    <Text>Nueva</Text>
+                    <Text>Solicitud</Text>
+                  </VStack>
+                </Pressable>
+              </HStack>
+              <HStack justifyContent="space-around" m="$4">
+                <Pressable
                   onPress={() => this.props.navigation.navigate("Carteras")}
                 >
-                  <View style={styles.c_boton_menu}>
-                    <View style={styles.image_shadow}>
+                  <VStack alignItems="center">
+                    <Box style={styles.image_shadow}>
                       <Image
                         style={styles.image_menu}
                         source={require("../../../../images/hoja_cobro.png")}
+                        alt="cobro"
                       />
-                    </View>
-                    <Text style={styles.texto_menu}>Hoja</Text>
-                    <Text style={styles.texto_menu}>Cobro</Text>
-                  </View>
-                </TouchableHighlight>
-                <TouchableHighlight
-                  underlayColor={"#fff"}
-                  style={styles.boton_menu}
-                  transparent
+                    </Box>
+                    <Text>Hoja</Text>
+                    <Text>Cobro</Text>
+                  </VStack>
+                </Pressable>
+                <Pressable
                   onPress={() =>
                     this.props.navigation.navigate("ListadoSolicitud")
                   }
                 >
-                  <View style={styles.c_boton_menu}>
-                    <View style={styles.image_shadow}>
+                  <VStack alignItems="center">
+                    <Box style={styles.image_shadow}>
                       <Image
                         style={styles.image_menu}
                         source={require("../../../../images/solicitudes.png")}
+                        alt="solicitudes"
                       />
-                    </View>
-                    <Text style={styles.texto_menu}>Solicitudes</Text>
-                    <Text style={styles.texto_menu}>Pendientes</Text>
-                  </View>
-                </TouchableHighlight>
-              </View>
-            </Content>
+                    </Box>
+                    <Text>Solicitudes</Text>
+                    <Text>Pendientes</Text>
+                  </VStack>
+                </Pressable>
+              </HStack>
+            </VStack>
           )}
-        </Content>
-      </Container>
+        </ScrollView>
+      </Box>
     );
   }
 }
