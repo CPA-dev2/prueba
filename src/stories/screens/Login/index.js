@@ -1,49 +1,59 @@
 import * as React from "react";
 import { Image, Platform } from "react-native";
-import { Container, Content, Header, Body, Title, Button, Text, View, Icon, Footer } from "native-base";
-//import styles from "./styles";
+import {
+  Box,
+  Heading,
+  Text,
+  Button,
+  ButtonText,
+  Icon,
+  VStack,
+  Center,
+  HStack,
+} from "@gluestack-ui/themed";
+import { Flash } from "lucide-react-native";
+
 export interface Props {
-	loginForm: any,
-	onLogin: Function,
+  loginForm: any,
+  onLogin: Function,
 }
 export interface State {}
 class Login extends React.Component<Props, State> {
-	render() {
-		return (
-			<Container>
-				<Header style={{ height: 200 }}>
-					<Body style={{ alignItems: "center" }}>
-						<Icon name="flash" style={{ fontSize: 104 }} />
-						<Title>PrendaCreditoAvanza.com</Title>
-						<View padder>
-							<Text style={{ color: Platform.OS === "ios" ? "#000" : "#FFF" }}>
-								Build Something Amazing
-							</Text>
-						</View>
-					</Body>
-				</Header>
-				<Content>
-					{this.props.loginForm}
-					<View padder>
-						<Button block onPress={() => this.props.onLogin()}>
-							<Text>INICIAR</Text>
-						</Button>
-					</View>
-				</Content>
-				<Footer style={{ backgroundColor: "#F8F8F8" }}>
-					<View style={{ alignItems: "center", opacity: 0.5, flexDirection: "row" }}>
-						<View padder>
-							<Text style={{ color: "#000" }}>Made with love at </Text>
-						</View>
-						<Image
-							source={{ uri: "https://geekyants.com/images/logo-dark.png" }}
-							style={{ width: 422 / 4, height: 86 / 4 }}
-						/>
-					</View>
-				</Footer>
-			</Container>
-		);
-	}
+  render() {
+    return (
+      <Box flex={1}>
+        <Center h={200} bg="$primary500">
+          <Icon as={Flash} size="xl" color="$white" />
+          <Heading color="$white">PrendaCreditoAvanza.com</Heading>
+          <Box p="$4">
+            <Text color={Platform.OS === "ios" ? "$black" : "$white"}>
+              Build Something Amazing
+            </Text>
+          </Box>
+        </Center>
+        <Box>
+          {this.props.loginForm}
+          <Box p="$4">
+            <Button onPress={() => this.props.onLogin()}>
+              <ButtonText>INICIAR</ButtonText>
+            </Button>
+          </Box>
+        </Box>
+        <Box bg="$trueGray200" p="$4">
+          <Center>
+            <HStack>
+              <Text color="$black">Made with love at </Text>
+              <Image
+                source={{ uri: "https://geekyants.com/images/logo-dark.png" }}
+                style={{ width: 422 / 4, height: 86 / 4 }}
+                alt="GeekyAnts"
+              />
+            </HStack>
+          </Center>
+        </Box>
+      </Box>
+    );
+  }
 }
 
 export default Login;

@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
 import { persistReducer } from 'redux-persist';
 import { reducer as formReducer } from "redux-form";
-import storage from 'redux-persist/lib/storage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import homeReducer from "../container/HomeContainer/reducer";
 import login from "./modules/login";
@@ -18,7 +18,7 @@ import cobranza_dificil from "./modules/cobranza-dificil"
 
 const rootPersistConfig = {
   key: 'root',
-  storage: storage,
+  storage: AsyncStorage,
   whitelist: ['fcm']
 };
 

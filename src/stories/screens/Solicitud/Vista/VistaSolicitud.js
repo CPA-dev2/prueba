@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Spinner, Button } from "native-base";
 import { TabViewAnimated, TabBar, SceneMap } from 'react-native-tab-view';
-import {StyleSheet, Dimensions, Image, Alert, Modal, PermissionsAndroid} from 'react-native';
+import {StyleSheet, Dimensions, Image, Alert, Modal} from 'react-native';
 import estilos from "./styles";
 import Navbar from "../../../../container/NavbarContainer/NavbarContainer";
 import TabCliente from "../../../../container/SolicitudContainer/Vista/TabClienteContainer";

@@ -1,70 +1,82 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import { RefreshControl, Image } from "react-native";
-import { Container, Content, Button, Text, View } from "native-base";
+import {
+  Box,
+  Button,
+  Text,
+  Spinner,
+  VStack,
+  HStack,
+  Pressable,
+  Icon,
+} from "@gluestack-ui/themed";
+import { ScrollView } from "react-native";
 import Navbar from "../../../../container/NavbarContainer/NavbarContainer";
 import Buscador from "../../Navbar/Buscador";
 import styles from "./styles";
 import { fotos } from "../../../../utils/fotos";
+import { EyeIcon } from 'lucide-react-native';
 
+const ListadoPreAutorizadas = (props) => {
+  const { solicitudes_filtro, loader, navigation, filtrarSolicitudes, getListado, setSolicitudSeleccionada } = props;
+  const [search, setSearch] = useState(true);
 
-class ListadoPreAutorizadas extends Component {
-  constructor(props){
-    super(props);
-    this.state = {search: true};
-    this.toggleNavbar = this.toggleNavbar.bind(this);
-  }
-  componentWillMount() {
-    this.props.getListado();
-  }
-  toggleNavbar() {
-    this.setState({search: !this.state.search});
-  }
-  _onRefresh() {
-    this.props.getListado();
-  }
-  render() {
-    const { solicitudes_filtro, loader, navigation, filtrarSolicitudes } = this.props;
-    return (
-      <Container>
-        {(this.state.search) ? (
-            <Navbar regresar={() => {navigation.popToTop();}} titulo={"Solicitudes Pre-Autorizadas"} navigation={navigation} imagen={fotos.lupa} cerrar={() => {this.toggleNavbar();}}/>)
-          : (
-            <Buscador placeholder={"Buscar por No. de DPI"} salir={this.toggleNavbar} inputChange={filtrarSolicitudes}/>
-          )}
-        <Content style={{backgroundColor: 'white'}} refreshControl={<RefreshControl refreshing={loader}
-            onRefresh={this._onRefresh.bind(this)} />}>
-          {(loader) ? (
-            <View><Text style={styles.text_center}>Cargando información...</Text></View>
-          ) : (
-            <View>
-            <View style={{ flexDirection: "row" }}>
-              <Text style={{ flex: 2, ...styles.text_center}}>Nombre</Text>
-              <Text style={{ flex: 2, ...styles.text_center}}>DPI</Text>
-              <Text style={{ flex: 1, ...styles.text_center}}>Acciones</Text>
-            </View>
-            {(solicitudes_filtro.filter(solicitud => !solicitud.analisis_credito).map((solicitud) => {
-              return (<View key={solicitud.id} style={{ flexDirection: "row", alignItems:"center" }}>
-                <View style={{ ...styles.titulo_nombre, flex: 2, flexDirection: "column"}}>
-                  <Text style={{...styles.appellidos}}>{solicitud.cliente.apellidos},</Text>
-                  <Text style={{...styles.nombres}}>{solicitud.cliente.nombres}</Text>
-                </View>
-                <Text style={{ ...styles.text_gray, flex: 2}}>{solicitud.cliente.dpi}</Text>
-                <Button transparent
-                        style={{ ...styles.titulo_nombre, flex: 1, justifyContent:"center"}}
-                        onPress={() => {
-                          this.props.setSolicitudSeleccionada(solicitud);
-                          navigation.navigate("VistaPreAutorizada");
-                        }}>
-                  <Image style={{ ...styles.ojo, backgroundColor: "#FFF"}} source={require("../../../../../images/icons/ver.png")}/>
-                </Button>
-              </View>);
-            }))}
-          </View>
-          )}
-        </Content>
-      </Container>
-    );
-  }
-}
+  useEffect(() => {
+    getListado();
+  }, []);
 
-export default  ListadoPreAutorizadas;
+  const toggleNavbar = () => {
+    setSearch(!search);
+  };
+
+  const onRefresh = () => {
+    getListado();
+  };
+
+  return (
+    <Box flex={1}>
+      {search ? (
+        <Navbar regresar={() => navigation.popToTop()} titulo={"Solicitudes Pre-Autorizadas"} navigation={navigation} imagen={fotos.lupa} cerrar={toggleNavbar}/>
+      ) : (
+        <Buscador placeholder={"Buscar por No. de DPI"} salir={toggleNavbar} inputChange={filtrarSolicitudes}/>
+      )}
+      <ScrollView
+        style={{backgroundColor: 'white'}}
+        refreshControl={<RefreshControl refreshing={loader} onRefresh={onRefresh} />}
+      >
+        {loader ? (
+          <Box><Text style={styles.text_center}>Cargando información...</Text></Box>
+        ) : (
+          <VStack>
+            <HStack borderBottomWidth="$1" borderColor="$trueGray300" p="$2">
+              <Text flex={2} style={styles.text_center}>Nombre</Text>
+              <Text flex={2} style={styles.text_center}>DPI</Text>
+              <Text flex={1} style={styles.text_center}>Acciones</Text>
+            </HStack>
+            {solicitudes_filtro.filter(solicitud => !solicitud.analisis_credito).map((solicitud) => (
+              <HStack key={solicitud.id} borderBottomWidth="$1" borderColor="$trueGray200" p="$2" alignItems="center">
+                <VStack flex={2} style={styles.titulo_nombre}>
+                  <Text style={styles.appellidos}>{solicitud.cliente.apellidos},</Text>
+                  <Text style={styles.nombres}>{solicitud.cliente.nombres}</Text>
+                </VStack>
+                <Text flex={2} style={styles.text_gray}>{solicitud.cliente.dpi}</Text>
+                <Pressable
+                  flex={1}
+                  justifyContent="center"
+                  onPress={() => {
+                    setSolicitudSeleccionada(solicitud);
+                    navigation.navigate("VistaPreAutorizada");
+                  }}
+                >
+                  <Icon as={EyeIcon} size="md" color="$primary500" />
+                </Pressable>
+              </HStack>
+            ))}
+          </VStack>
+        )}
+      </ScrollView>
+    </Box>
+  );
+};
+
+export default ListadoPreAutorizadas;

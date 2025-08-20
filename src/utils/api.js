@@ -1,7 +1,6 @@
 import { actions } from "../reducers/modules/login";
-import RNFetchBlob from 'rn-fetch-blob';
+import RNFetchBlob from 'react-native-blob-util';
 
-window.XMLHttpRequest = RNFetchBlob.polyfill.XMLHttpRequest;
 
 const request = require('superagent');
 const uuidv1 = require('uuid/v1');

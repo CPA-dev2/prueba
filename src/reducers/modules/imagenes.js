@@ -2,14 +2,11 @@ import { handleActions } from 'redux-actions';
 import _ from 'lodash';
 import { api } from "../../utils/api";
 import { getSolicitudById } from "./solicitud/solicitud";
-import RNFetchBlob from 'rn-fetch-blob';
+import RNFetchBlob from 'react-native-blob-util';
 
 const RNFS = require('react-native-fs');
 
-const Blob = RNFetchBlob.polyfill.Blob;
 const fs = RNFetchBlob.fs;
-window.XMLHttpRequest = RNFetchBlob.polyfill.XMLHttpRequest;
-window.Blob = Blob;
 
 
 

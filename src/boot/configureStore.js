@@ -8,13 +8,13 @@ import reducer from "../reducers";
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 // const composeEnhancers = compose;
 
-export default function configureStore(onCompletion: () => void): any {
+export default function configureStore() {
   const enhancer = composeEnhancers(
     applyMiddleware(thunk)
   );
 
   const store = createStore(reducer, enhancer);
-  persistStore(store, onCompletion);
+  const persistor = persistStore(store);
 
-  return store;
+  return { store, persistor };
 }

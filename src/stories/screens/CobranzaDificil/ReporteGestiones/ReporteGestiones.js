@@ -1,7 +1,7 @@
 import { Container, Content, Icon, Text, View } from "native-base";
 import React, { Component } from "react";
-import { ActivityIndicator, Platform, ToastAndroid } from "react-native";
-import DatePicker from "react-native-datepicker";
+import { ActivityIndicator, Platform, ToastAndroid, Pressable } from "react-native";
+import DatePicker from "react-native-date-picker";
 import { FloatingAction } from "react-native-floating-action";
 import { colors } from "../../../../utils/colors";
 import Navbar from "../../Navbar/Navbar";
@@ -14,6 +14,10 @@ import { report_utils } from "./utils";
 export class ReporteGestiones extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      isFromDatePickerVisible: false,
+      isToDatePickerVisible: false,
+    };
   }
 
   async createPDF() {
@@ -103,37 +107,37 @@ export class ReporteGestiones extends Component {
           >
             <Icon style={{ marginRight: 10, marginLeft: 15 }} name="calendar" />
             <Text style={styles.label}>Desde</Text>
+            <Pressable onPress={() => this.setState({ isFromDatePickerVisible: true })}>
+              <Text>{filtros_gestiones.from || "Desde..."}</Text>
+            </Pressable>
             <DatePicker
-              androidMode="spinner"
-              style={{ flex: 1 }}
+              modal
+              open={this.state.isFromDatePickerVisible}
+              date={filtros_gestiones.from ? new Date(filtros_gestiones.from) : new Date()}
               mode="date"
-              date={filtros_gestiones.from}
-              placeholder="Desde..."
-              format="DD-MM-YYYY"
-              confirmBtnText="Aceptar"
-              cancelBtnText="Cancelar"
-              maxDate={report_utils.get_today_date()}
-              showIcon={false}
-              customStyles={styles.styles_date_picker}
-              onDateChange={(date) => {
-                this.props.setFiltroGestion("from", date);
+              onConfirm={(date) => {
+                this.setState({ isFromDatePickerVisible: false });
+                this.props.setFiltroGestion("from", date.toISOString().split('T')[0]);
+              }}
+              onCancel={() => {
+                this.setState({ isFromDatePickerVisible: false });
               }}
             />
             <Text style={styles.label}>Hasta</Text>
+            <Pressable onPress={() => this.setState({ isToDatePickerVisible: true })}>
+              <Text>{filtros_gestiones.to || "Hasta"}</Text>
+            </Pressable>
             <DatePicker
-              androidMode="spinner"
-              style={{ flex: 1 }}
+              modal
+              open={this.state.isToDatePickerVisible}
+              date={filtros_gestiones.to ? new Date(filtros_gestiones.to) : new Date()}
               mode="date"
-              date={filtros_gestiones.to}
-              placeholder="Hasta"
-              format="DD-MM-YYYY"
-              confirmBtnText="Aceptar"
-              cancelBtnText="Cancelar"
-              maxDate={report_utils.get_saturday_date()}
-              showIcon={false}
-              customStyles={styles.styles_date_picker}
-              onDateChange={(date) => {
-                this.props.setFiltroGestion("to", date);
+              onConfirm={(date) => {
+                this.setState({ isToDatePickerVisible: false });
+                this.props.setFiltroGestion("to", date.toISOString().split('T')[0]);
+              }}
+              onCancel={() => {
+                this.setState({ isToDatePickerVisible: false });
               }}
             />
           </View>
