@@ -4,6 +4,7 @@ apply plugin: "com.google.gms.google-services"
 apply from: new File(["node", "--print", "require.resolve('react-native/package.json')"].execute(null, rootDir).text.trim(), "../android/dependencies.gradle")
 
 android {
+    namespace "com.prendacreditoavanza"
     ndkVersion rootProject.ext.ndkVersion
     compileSdkVersion rootProject.ext.compileSdkVersion
 
@@ -58,7 +59,9 @@ android {
 dependencies {
     implementation "com.facebook.react:react-android"
     implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.22"
-
+    implementation("com.facebook.react:react-native")
+    implementation project(':react-native-gesture-handler')
+    implementation project(':react-native-reanimated')
     // Firebase
     implementation platform('com.google.firebase:firebase-bom:32.8.1')
     implementation 'com.google.firebase:firebase-analytics'
