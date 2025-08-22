@@ -1,27 +1,24 @@
 buildscript {
     ext {
-        buildToolsVersion = "34.0.0"
+        // Apuntamos a SDK 35 como base, que es compatible para compilar hacia SDK 35
+        buildToolsVersion = "35.0.0"
         minSdkVersion = 23
-        compileSdkVersion = 34
-        targetSdkVersion = 34
-        ndkVersion = "25.1.8937393"
-        kotlinVersion = "1.9.22"
+        compileSdkVersion = 35
+        targetSdkVersion = 35
+        
+        // Versión de NDK recomendada para el Android Gradle Plugin (AGP) 8.x
+        ndkVersion = "25.2.9519653"
+
+        // Versión de Kotlin sincronizada con la que pide AGP 8.4.1
+        kotlinVersion = "1.9.23"
     }
     repositories {
         google()
         mavenCentral()
     }
     dependencies {
-        classpath("com.android.tools.build:gradle:8.3.2")
-        classpath("com.facebook.react:react-native-gradle-plugin")
+        // Versión moderna del Android Gradle Plugin
+        classpath("com.android.tools.build:gradle:8.4.1")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
-        classpath('com.google.gms:google-services:4.4.1')
-    }
-}
-
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
     }
 }
